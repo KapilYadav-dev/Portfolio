@@ -66,3 +66,26 @@ a.active, a:hover {
     background: #1b9bff;
     transition: .5s;
 }
+/*For landing page*/
+#landing {
+    height: 100vh;
+}
+.intro {
+    color: white;
+    font-size: 4rem;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+.intro_text {
+    color: whitesmoke;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    width: auto;
+    margin: 05rem;
+    max-width: 700px;
+    margin-top: 50px;
+    text-align: justify;
+}
+.span_name {
+    color: #117bfb;
+}
