@@ -67,7 +67,7 @@ a.active, a:hover {
     transition: .5s;
 }
 /*For landing page*/
-#landing {
+#landing,#skills,#qualification,#projects,#contact {
     height: 100vh;
 }
 .intro {
@@ -151,4 +151,62 @@ a.active, a:hover {
 
 .quali_img:hover {
     animation: zoominoutsinglefeatured 1s infinite;
+}
+/*Skills Section CSS*/
+.skills-head {
+    color: white;
+    font-size: 4rem;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+.skill-text {
+    font-family: 'Lora';
+    margin-left: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.container {
+    width: 60%;
+    margin: 1rem;
+    position: relative;
+    border-radius: 10px;
+    left: 4rem;
+    background-color: #ddd;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.app {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
+.learn {
+    width: 98%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
+.hack {
+    width: 46%;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+    background-color: #2196F3;
+}
+
+.ui {
+    width: 60%;
+    border-radius: 10px;
+    background-color: #2196F3;
 }
