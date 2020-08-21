@@ -152,7 +152,7 @@ a.active, a:hover {
 .quali_img:hover {
     animation: zoominoutsinglefeatured 1s infinite;
 }
-/*Skills Section CSS*/
+/*For Skills Section CSS*/
 .skills-head {
     color: white;
     font-size: 4rem;
@@ -209,4 +209,23 @@ a.active, a:hover {
     width: 60%;
     border-radius: 10px;
     background-color: #2196F3;
+}
+/*For Project Section CSS*/
+
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img {
+    border-radius: 10%;
+}
+
+.project-text {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
 }
