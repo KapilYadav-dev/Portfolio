@@ -89,3 +89,66 @@ a.active, a:hover {
 .span_name {
     color: #117bfb;
 }
+.logo_img {
+    width: 400px;
+    height: 400px;
+    margin-left: 60%;
+    border-radius: 50%;
+    margin-right: 10rem;
+    margin-top: -50rem;
+}
+/*For qualification page*/
+.quali-head {
+    color: white;
+    font-size: 4rem;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+.quali-text {
+    color: whitesmoke;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    width: auto;
+    margin: 05rem;
+    max-width: 700px;
+    margin-top: 50px;
+    text-align: justify;
+}
+.qualification-span {
+    color: #117bfb;
+}
+.quali_img {
+    width: auto;
+    height: auto;
+    align-self: left;
+    margin-left: 60%;
+    border-radius: 50%;
+    margin-right: 10rem;
+    margin-top: -100rem;
+}
+.quali-area {
+    font-size: 3rem;
+    color: #117bfb;
+    margin-left: 5rem;
+}
+
+/*Animation using Keyframe to images*/
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.logo_img:hover {
+    animation: zoominoutsinglefeatured 1s infinite;
+}
+
+.quali_img:hover {
+    animation: zoominoutsinglefeatured 1s infinite;
+}
