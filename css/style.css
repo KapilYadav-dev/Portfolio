@@ -344,7 +344,7 @@ a.active, a:hover {
 
     }
     #qualification ,#projects {
-        background-color: #234;
+        background-color:rgb(39, 41, 43);
         margin: 1rem;
         padding: 0.1rem 0rem;
         border-radius: 20px;
