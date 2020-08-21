@@ -270,3 +270,16 @@ a.active, a:hover {
     background: limegreen;
     color: white;
 }
+/*For Footer Class*/
+
+.footer-class {
+    color: white;
+    background-color: #0082e6;
+    height: auto;
+    font-family: 'Lora';
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/*For mobile repsonsivenes */
+
