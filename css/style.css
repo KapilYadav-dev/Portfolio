@@ -25,20 +25,12 @@ body {
 
 nav {
     height: 80px;
-    position: absolute;
+    position: fixed;
     margin-top: -10rem;
     background-color: rgb(39, 41, 43);
     width: 100%;
 }
 
-
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
 
 nav ul {
     float: right;
@@ -64,7 +56,7 @@ a.active, a:hover {
     transition: .5s;
 }
 /*For landing page*/
-#landing {
+#landing , #skills{
     height: 100vh;
 }
 .intro {
@@ -117,10 +109,10 @@ a.active, a:hover {
 .quali_img {
     width: auto;
     height: auto;
-    align-self: left;
     margin-left: 60%;
     border-radius: 50%;
     margin-right: 10rem;
+    padding-bottom: 10rem;
     margin-top: -100rem;
 }
 .quali-area {
@@ -155,6 +147,12 @@ a.active, a:hover {
     font-size: 4rem;
     margin: 5rem;
     margin-top: 10rem;
+}
+.skills-class{
+    padding-top: 1rem;
+}
+.wrapper,.quali-class  {
+    padding-top: 0.5rem;
 }
 .skill-text {
     font-family: 'Lora';
@@ -196,14 +194,14 @@ a.active, a:hover {
 }
 
 .hack {
-    width: 46%;
+    width: 66%;
     border-radius: 10px;
     margin-bottom: 10rem;
     background-color: #2196F3;
 }
 
-.ui {
-    width: 60%;
+.team {
+    width: 94%;
     border-radius: 10px;
     background-color: #2196F3;
 }
@@ -344,7 +342,7 @@ a.active, a:hover {
 
     }
     #qualification ,#projects {
-        background-color:rgb(39, 41, 43);
+        background-color:rgb(39, 41, 43)    ;
         margin: 1rem;
         padding: 0.1rem 0rem;
         border-radius: 20px;
