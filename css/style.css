@@ -21,6 +21,19 @@ body {
     background-size: cover;
     background-color: #131419;
 }
+/* Custom Scroll Bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#117bfb);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent,#00c6f0);
+}
+
+/* Navigation Bar CSS*/
 
 nav {
     height: 80px;
@@ -248,7 +261,7 @@ nav a.active, nav a:hover {
     font-family: 'Alata';
     font-weight: bold;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .card img {
@@ -339,6 +352,8 @@ nav a.active, nav a:hover {
 /*For mobile repsonsivenes */
 
 @media (max-width: 1337px) {
+
+    
     .flex-container {
         display: block;
     }
@@ -363,7 +378,7 @@ nav a.active, nav a:hover {
         display: none;
     }
     nav {
-        display: none;
+       display: none;
     }
     .intro_text {
         width: 150%;
@@ -397,6 +412,7 @@ nav a.active, nav a:hover {
     }
     #landing, #skills {
         height: auto;
+        margin-top: 0rem;
     }
     img-area {
         display: flex;
