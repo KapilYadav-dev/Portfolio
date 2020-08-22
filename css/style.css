@@ -264,45 +264,37 @@ nav a.active, nav a:hover {
 
 /*For Contact Section CSS*/
 
-.social {
-    display: flex;
-    margin: 20rem;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.fa:hover {
-    transform: scale(1.5);
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    margin: 5px;
-    width: 50px;
+.social-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    background-color: #d2d2d2;
     text-align: center;
+    margin-bottom: 10rem;
+    border-radius: 10px;
+  }
+  .social-card img {
+      height:100px ;
+      margin: 2rem;
+  }
+  
+  .title {
+    color: #131419;
+    opacity: 0.9;
+    font-size: 18px;
+  }
+
+  a {
     text-decoration: none;
-    border-radius: 10%;
-}
-
-.fa:hover {
+    font-size: 22px;
+    padding: 10px;
+    color: black;
+    padding-bottom: 2rem;
+  }
+  
+  button:hover, a:hover {
     opacity: 0.7;
-}
-
-.fa-github {
-    background: #234;
-    color: white;
-}
-
-.fa-instagram {
-    background: palevioletred;
-    color: white;
-}
-
-.fa-android {
-    background: limegreen;
-    color: white;
-}
+  }
 
 /*For Footer Class*/
 
