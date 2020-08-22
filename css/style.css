@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Lora&family=Work+Sans&display=swap";
-
+@import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +20,6 @@ body {
     background-position: center center;
     background-size: cover;
     background-color: #131419;
-    
 }
 
 nav {
@@ -31,7 +30,6 @@ nav {
     width: 100%;
 }
 
-
 nav ul {
     float: right;
     margin-right: 20px;
@@ -39,6 +37,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    font-family: "Poppins";
     line-height: 80px;
     margin: 0 5px;
 }
@@ -51,23 +50,27 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active, a:hover {
+nav a.active, nav a:hover {
     background: #1b9bff;
     transition: .5s;
 }
+
 /*For landing page*/
-#landing , #skills{
+
+#landing, #skills, #projects {
     height: 100vh;
 }
+
 .intro {
     color: white;
     font-size: 4rem;
     margin: 5rem;
     margin-top: 10rem;
 }
+
 .intro_text {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Varela Round';
     font-size: 1.5rem;
     width: auto;
     margin: 05rem;
@@ -75,9 +78,11 @@ a.active, a:hover {
     margin-top: 50px;
     text-align: justify;
 }
+
 .span_name {
     color: #117bfb;
 }
+
 .logo_img {
     width: 400px;
     height: 400px;
@@ -86,16 +91,19 @@ a.active, a:hover {
     margin-right: 10rem;
     margin-top: -50rem;
 }
+
 /*For qualification page*/
+
 .quali-head {
     color: white;
     font-size: 4rem;
     margin: 5rem;
     margin-top: 10rem;
 }
+
 .quali-text {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Varela Round';
     font-size: 1.5rem;
     width: auto;
     margin: 05rem;
@@ -103,9 +111,11 @@ a.active, a:hover {
     margin-top: 50px;
     text-align: justify;
 }
+
 .qualification-span {
     color: #117bfb;
 }
+
 .quali_img {
     width: auto;
     height: auto;
@@ -115,6 +125,7 @@ a.active, a:hover {
     padding-bottom: 10rem;
     margin-top: -100rem;
 }
+
 .quali-area {
     font-size: 3rem;
     color: #117bfb;
@@ -122,6 +133,7 @@ a.active, a:hover {
 }
 
 /*Animation using Keyframe to images*/
+
 @keyframes zoominoutsinglefeatured {
     0% {
         transform: scale(1, 1);
@@ -141,21 +153,26 @@ a.active, a:hover {
 .quali_img:hover {
     animation: zoominoutsinglefeatured 1s infinite;
 }
+
 /*For Skills Section CSS*/
+
 .skills-head {
     color: white;
     font-size: 4rem;
     margin: 5rem;
     margin-top: 10rem;
 }
-.skills-class{
+
+.skills-class {
     padding-top: 1rem;
 }
-.wrapper,.quali-class  {
+
+.wrapper, .quali-class {
     padding-top: 0.5rem;
 }
+
 .skill-text {
-    font-family: 'Lora';
+    font-family: 'Varela Round';
     margin-left: 5rem;
     color: white;
     font-size: 2rem;
@@ -165,6 +182,7 @@ a.active, a:hover {
     width: 60%;
     margin: 1rem;
     position: relative;
+    z-index: -10;
     border-radius: 10px;
     left: 4rem;
     background-color: #ddd;
@@ -205,25 +223,45 @@ a.active, a:hover {
     border-radius: 10px;
     background-color: #2196F3;
 }
+
 /*For Project Section CSS*/
 
-.img-area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.single-img {
-    border-radius: 10%;
-}
-
 .project-text {
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
+    display: none;
 }
+
+.flex-container {
+    display: flex;
+    margin: 2rem;
+    align-content: center;
+    justify-content: center;
+    background-size: auto;
+}
+
+.card {
+    opacity: 0.1;
+    background-size: auto;
+}
+
+.card p {
+    color: white;
+    font-family: "Varela Round";
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card img {
+    width: 450px;
+    height: 300px;
+    z-index: -1;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
 /*For Contact Section CSS*/
 
 .social {
@@ -265,17 +303,19 @@ a.active, a:hover {
     background: limegreen;
     color: white;
 }
+
 /*For Footer Class*/
 
 .footer-class {
     color: white;
     background-color: #0082e6;
     height: auto;
-    font-family: 'Lora';
+    font-family: 'Varela Round';
     font-size: 20px;
     padding: 20px;
     text-align: center;
 }
+
 /*Added Top Button*/
 
 .up-img {
@@ -285,9 +325,24 @@ a.active, a:hover {
     bottom: 40px;
     right: 40px;
 }
+
 /*For mobile repsonsivenes */
 
 @media (max-width: 1337px) {
+    .flex-container {
+        display: block;
+    }
+    #projects {
+        height: auto;
+    }
+    .card {
+        opacity: 1;
+        margin: 2rem;
+        font-size: 150%;
+    }
+    img {
+        display: none
+    }
     .logo_img, .quali_img {
         display: none;
     }
@@ -304,7 +359,7 @@ a.active, a:hover {
     }
     .intro_text, .quali-text {
         color: whitesmoke;
-        font-family: 'Lora';
+        font-family: 'Varela Round';
         font-size: 1rem;
         width: auto;
         margin: 02rem;
@@ -319,11 +374,11 @@ a.active, a:hover {
     }
     .social {
         display: flex;
-        margin: 10rem  0;
+        margin: 10rem 0;
         justify-content: center;
         flex-direction: row;
     }
-    #landing , #skills {
+    #landing, #skills {
         height: auto;
     }
     img-area {
@@ -332,23 +387,19 @@ a.active, a:hover {
         align-items: center;
         justify-content: center;
     }
-    .single-img {
-        display: none;
-    }
     .project-text {
         text-align: start;
-        font-family: 'Lora';
+        font-family: 'Varela Round';
         font-size: 1.5rem;
-
     }
-    #qualification ,#projects {
-        background-color:rgb(39, 41, 43)    ;
+    #qualification, #projects {
+        background-color: rgb(39, 41, 43);
         margin: 1rem;
         padding: 0.1rem 0rem;
         border-radius: 20px;
     }
     .skill-text {
-        font-family: 'Lora';
+        font-family: 'Varela Round';
         margin-left: 5rem;
         color: white;
         font-size: 1.5rem;
@@ -361,4 +412,3 @@ a.active, a:hover {
         right: 20px;
     }
 }
-    
