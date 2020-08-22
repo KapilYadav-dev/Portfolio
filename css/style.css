@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Lora&family=Work+Sans&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Alata&display=swap";
 html {
     scroll-behavior: smooth;
 }
@@ -52,6 +52,7 @@ nav ul li a {
 
 nav a.active, nav a:hover {
     background: #1b9bff;
+    opacity: 1;
     transition: .5s;
 }
 
@@ -108,7 +109,7 @@ nav a.active, nav a:hover {
     width: auto;
     margin: 05rem;
     max-width: 700px;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: justify;
 }
 
@@ -227,7 +228,7 @@ nav a.active, nav a:hover {
 /*For Project Section CSS*/
 
 .project-text {
-    display: none;
+    display: none; /* SO that is remain hidden for Desktop mode but for mobile we will make it visible */
 }
 
 .flex-container {
@@ -239,15 +240,15 @@ nav a.active, nav a:hover {
 }
 
 .card {
-    opacity: 0.1;
     background-size: auto;
 }
 
 .card p {
     color: white;
-    font-family: "Varela Round";
+    font-family: 'Alata';
+    font-weight: bold;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .card img {
@@ -259,29 +260,46 @@ nav a.active, nav a:hover {
 }
 
 .card:hover {
-    opacity: 1;
+    opacity: 100%;
+    transform: scale(1.3);
+}
+.card:hover img {
+    margin: 2rem;
 }
 
 /*For Contact Section CSS*/
 
+
 .social-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    padding: 2rem;
     margin: auto;
     background-color: #d2d2d2;
     text-align: center;
-    margin-bottom: 10rem;
+    color: black;
+    margin-bottom: 5rem;
     border-radius: 10px;
   }
+  .social-card:hover {
+      transform: scale(1);
+      background-color: #ffffff ;
+      color: white;
+      background-color: rgb(39, 41, 43);
+      box-shadow: 0 4px 8px 0 #117bfb;
+  }
+  .social-card:hover  a {
+    color: white;
+}
   .social-card img {
       height:100px ;
       margin: 2rem;
   }
   
   .title {
-    color: #131419;
+    padding: 1rem;
     opacity: 0.9;
     font-size: 18px;
+    font-family: "Lora";
   }
 
   a {
@@ -302,7 +320,7 @@ nav a.active, nav a:hover {
     color: white;
     background-color: #0082e6;
     height: auto;
-    font-family: 'Varela Round';
+    font-family: 'Alata';
     font-size: 20px;
     padding: 20px;
     text-align: center;
@@ -329,8 +347,14 @@ nav a.active, nav a:hover {
     }
     .card {
         opacity: 1;
+        border-radius: 20px;
+        background-color: #131419;
         margin: 2rem;
         font-size: 150%;
+    }
+    .card:hover {
+        opacity: 100%;
+        transform: scale(1);
     }
     img {
         display: none
@@ -356,7 +380,8 @@ nav a.active, nav a:hover {
         width: auto;
         margin: 02rem;
         max-width: 700px;
-        margin-top: 50px;
+        margin-top: 10px;
+        margin-bottom: 50px;
         text-align: justify;
     }
     .quali-area {
