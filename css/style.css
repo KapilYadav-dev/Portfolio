@@ -336,10 +336,20 @@ nav a.active, nav a:hover {
     background-color: #0082e6;
     height: auto;
     font-family: 'Alata';
-    font-size: 20px;
+    font-size: 14px;
     padding: 20px;
     text-align: center;
 }
+.footer-class:hover {
+    background-color: lightcoral;
+}
+.footer-class:hover .heart {
+    color: #0082e6;
+}
+.heart {
+    color: lightcoral;
+}
+
 
 /*Added Top Button*/
 
