@@ -68,7 +68,9 @@ nav a.active, nav a:hover {
     opacity: 1;
     transition: .5s;
 }
-
+.a-icon {
+    display: none;
+}
 /*For landing page*/
 
 #landing, #skills, #projects {
@@ -378,7 +380,13 @@ nav a.active, nav a:hover {
         display: none;
     }
     nav {
-       display: none;
+        height: auto;
+        /* position: fixed; */
+        display: flex;
+        flex-flow: wrap-reverse;
+        /* margin-top: 0rem; */
+        background-color: rgb(39, 41, 43);
+        width: 100%;
     }
     .intro_text {
         width: 150%;
@@ -412,7 +420,7 @@ nav a.active, nav a:hover {
     }
     #landing, #skills {
         height: auto;
-        margin-top: 0rem;
+        margin-top: 10rem;
     }
     img-area {
         display: flex;
@@ -443,5 +451,29 @@ nav a.active, nav a:hover {
         height: 50px;
         bottom: 60px;
         right: 20px;
+    }
+}
+/*Nav Bar mobile responsive*/
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: inline-block;
+        font-family: "Poppins";
+        line-height: 80px;
+        padding-left: 20px;
+        /* margin: 0 5px; */
+    }
+    nav ul li a {
+        color: white;
+        font-size: 40px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    .normal-a {
+        display: none;
+    }
+    .a-icon {
+        display: contents;
     }
 }
