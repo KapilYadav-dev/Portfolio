@@ -4,31 +4,42 @@
 <head>
     <meta charset="utf-8">
     <title>Kaydev</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.9 ,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9 ">
     <meta name="theme-color" content="#27292b" />
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">  
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#qualification" >Qualification</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <nav>
         <ul>
-            <li><a class="normal-a" href="#">Home</a><a class="a-icon" href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li><a class="normal-a" href="#qualification">Qualification</a><a class="a-icon" href="#qualification"><i class="fa fa-book" aria-hidden="true"></i></a></li>
-            <li><a class="normal-a" href="#skills">Skills</a><a class="a-icon" href="#skills"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
-            <li><a class="normal-a" href="#projects">Projects</a><a class="a-icon" href="#projects"><i class="fa fa-file-code-o" aria-hidden="true"></i></a></li>
-            <li><a class="normal-a" href="#contact">Contact</a><a class="a-icon" href="#contact"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a class="normal-a" href="#">Home</a></li>
+            <li><a class="normal-a" href="#qualification">Qualification</a></li>
+            <li><a class="normal-a" href="#skills">Skills</a></li>
+            <li><a class="normal-a" href="#projects">Projects</a></li>
+            <li><a class="normal-a" href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="landing">
         <div class="landing-class">
             <p class="intro">Hey there,<br>I am <span class="span_name">Kaydev</span> </p>
-            <p class="intro_text">I’ve been learning and developing apps for android since 2018. I’m a Entrepreneurial App Developer,
+            <p class="intro_text">I’ve been learning and developing apps for android since 2018. I’m a Entrepreneurial
+                App Developer,
                 I’m good at communicating with clients, developers and designers (those with and without technical
                 knowledge). I listen a strong attention to detail. </p>
         </div>
-        <img class="logo_img" src="/images/DEVGIF.gif" />
+        <img class="logo_img" src="/images/image.png" />
     </section>
     <section id="qualification">
         <div class="quali-class">
@@ -76,20 +87,20 @@
                         <p>BMI App</p>
                         <p class="project-text">BMI App</p>
                     </a>
-                   
+
                 </div>
                 <div class="card">
                     <a href="/images/pramaan.png" target="_blank">
-                    <img src="/images/2.png">
-                    <p>Startup App</p>
-                    <p class="project-text">Startup App</p>
+                        <img src="/images/2.png">
+                        <p>Startup App</p>
+                        <p class="project-text">Startup App</p>
                     </a>
                 </div>
                 <div class="card">
                     <a href="/images/pubg.png" target="_blank">
-                    <img src="/images/3.png" alt=" img">
-                    <p>Pubg Tournament App</p>
-                    <p class="project-text">Pubg Tournament App</p>
+                        <img src="/images/3.png" alt=" img">
+                        <p>Pubg Tournament App</p>
+                        <p class="project-text">Pubg Tournament App</p>
                     </a>
                 </div>
 
@@ -106,16 +117,26 @@
             <a href="https://www.instagram.com/mrkaydev721" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/kay-dev-2938871ab/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.TheBTechian.com" target="_blank"><i class="fa fa-globe"></i></a>
-          </div>
+        </div>
     </section>
     <a href="#"><img class="up-img" src="/images/upload.svg"></a>
     <footer>
         <div class="foot-container">
             <div class="footer-class">
-                <p>Made with  <span class="heart">&#10084</span> by Kaydev<br>Copyright © 2020  All Rights Reserved</p>
+                <p>Made with <span class="heart">&#10084</span> by Kaydev<br>Copyright © 2020 All Rights Reserved</p>
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }    
+    </script>
 </body>
 
 </html>
